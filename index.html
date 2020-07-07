@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Javascript</title>
+        <style>
+            #wrap{
+                background: black;
+                color: white;
+                font-size: 25px;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <img src="gusti.jpeg" alt="">
+        <div id="wrap"></div>
+
+        <script>
+            //round() cell() floor() Object Methods(contohh: abs, log) r
+            //random spesific formula -> Math.floor(Math.random()*x) + 1;
+            var x = 10 ; //range .jarak
+            var y = 5 ; //batas minimal
+            //batas max = y+x;
+            var angka_baru = Math.floor( Math.random() * x) + y;
+
+            /*
+            1. memilih id wrap
+            2. metode innerHTML = nulis konten
+            */
+            document.getElementById("wrap").innerHTML = angka_baru;
+        </script>
+
+    </body>
+</html>
